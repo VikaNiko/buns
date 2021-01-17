@@ -1,0 +1,56 @@
+.bun-app{
+  background-color: white;
+  padding: 10px;
+  height: 70vh;
+}
+.items {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+
+}
+.table{
+  width: 100%
+}
+.thead th {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #5a5a5d;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  color: #EEE;
+
+}
+.items tr {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  color: #5a5a5d;
+
+
+
+}
+.items tr:hover {
+
+  background-color: #bcbcbc;
+  /*left: .1em;*/
+}
+.items tr.selected {
+  background-color: #ffb553;
+
+}
+.items tr.selected:hover {
+  background-color: #cd9242;
+
+}
+.items td {
+
+
+}

@@ -1,0 +1,24 @@
+<div class="bun-app">
+    <div  *ngIf="buns">
+
+      <table class="table">
+        <thead class="thead" >
+        <tr>
+          <th>#</th>
+          <th>Тип булочки</th>
+          <th>Начальная цена</th>
+          <th>Текущая цена</th>
+        </tr>
+        </thead>
+        <tbody class="items">
+        <tr  *ngFor="let bun of buns; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{getBunName( bun.bunType)}}</td>
+          <td>{{bun.startPrice}}</td>
+          <td>{{bun.lastPrice}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
