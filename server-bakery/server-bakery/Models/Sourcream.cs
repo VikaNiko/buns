@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace server_bakery.Models
 {
-    public class Sourcream
+    public class Sourcream: Bun
     {
+        //TODO 
+        // public override int HoursToNextPrice
+        //public override int NextPrice 
     }
 }

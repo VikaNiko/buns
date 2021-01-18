@@ -8,6 +8,8 @@
           <th>Тип булочки</th>
           <th>Начальная цена</th>
           <th>Текущая цена</th>
+          <th>Прогнозируемая цена</th>
+          <th>Время изменения</th>
         </tr>
         </thead>
         <tbody class="items">
@@ -16,6 +18,8 @@
           <td>{{getBunName( bun.bunType)}}</td>
           <td>{{bun.startPrice}}</td>
           <td>{{bun.lastPrice}}</td>
+          <td>{{bun.nextPrice}}</td>
+          <td>{{showNewDate(bun.lastPriceUpdate, bun.hoursToNextPrice)}}</td>
         </tr>
         </tbody>
       </table>
