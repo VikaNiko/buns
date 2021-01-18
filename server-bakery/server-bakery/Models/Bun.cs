@@ -30,16 +30,23 @@ namespace server_bakery.Models{
         Wasted = 2,
 
     };
-    public  class Bun
+    public class Bun
     {
         public int Id { get; set; }
         public double StartPrice { get; set; }
-        public double LastPrice { get; set; }
-        public DateTime CreationDate { get; set; }
+        //текущая цена
+        public double LastPrice { get; set; } 
+        public DateTime CreationDate { get; set; } = DateTime.Now;
+        public DateTime LastPriceUpdate { get; set; } = DateTime.Now;
         public BunType BunType { get; set; }
+        //количество часов до истечения срока годности => выкидываем булочку
         public int ExpTime { get; set; }
+        //количество часов до истечения срока продаж => булки станут хуже продаваться
         public int SellTime { get; set; }
         public BunStatus BunStatus { get; set; }
+        //количество часов до новой цены
+        public virtual int HoursToNextPrice => 1;
+        public virtual double NextPrice  => LastPrice * 98 / 100;
+}
 
-    }
 }

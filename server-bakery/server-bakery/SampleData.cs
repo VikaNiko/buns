@@ -15,7 +15,7 @@ namespace server_bakery
                 context.Buns.AddRange(
                     new Bun
                     {
-                        CreationDate = DateTime.Now,
+                        
                         StartPrice = 20.50,
                         LastPrice = 20.50,
                         ExpTime = 24,
@@ -25,7 +25,6 @@ namespace server_bakery
                     },
                     new Bun
                     {
-                        CreationDate = DateTime.Now,
                         StartPrice = 30.50,
                         LastPrice = 30.50,
                         ExpTime = 20,
@@ -36,7 +35,6 @@ namespace server_bakery
                     },
                     new Bun
                     {
-                        CreationDate = DateTime.Now,
                         StartPrice = 10.50,
                         LastPrice = 10.50,
                         ExpTime = 36,
@@ -47,7 +45,6 @@ namespace server_bakery
                     },
                     new Bun
                     {
-                        CreationDate = DateTime.Now,
                         StartPrice = 20.50,
                         LastPrice = 20.50,
                         ExpTime = 24,

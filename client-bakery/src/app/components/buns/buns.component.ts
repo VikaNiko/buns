@@ -23,5 +23,7 @@ export class BunsComponent implements OnInit {
   getBunName(t: number): string {
     return BunType[t];
   }
-
+  showNewDate (d: Date, h: number ): Date{
+    return new Date(d.setHours(d.getHours()+h));
+  }
 }

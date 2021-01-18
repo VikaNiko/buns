@@ -30,12 +30,9 @@ export class Bun {
   sellTime: number;
   bunType: BunType;
   bunStatus: BunStatus;
-  bunNewPrice: number;
-  bunPriceUpdateTime: Date;
-  updateForecast(): void {
-   if (!this.bunPriceUpdateTime) {
-      this.bunPriceUpdateTime = new Date(this.creationDate.getHours() + 1);
-    }
-  }
+  lastPriceUpdate: Date;
+  hoursToNextPrice: number;
+  nextPrice: number;
+
   }
 
