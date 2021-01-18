@@ -24,6 +24,7 @@ export class BunsComponent implements OnInit {
     return BunType[t];
   }
   showNewDate (d: Date, h: number ): Date{
-    return new Date(d.setHours(d.getHours()+h));
+    const date = new Date(d);
+    return new Date(date.setHours(date.getHours()+h));
   }
 }

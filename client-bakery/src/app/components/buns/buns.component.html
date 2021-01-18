@@ -19,7 +19,7 @@
           <td>{{bun.startPrice}}</td>
           <td>{{bun.lastPrice}}</td>
           <td>{{bun.nextPrice}}</td>
-          <td>{{showNewDate(bun.lastPriceUpdate, bun.hoursToNextPrice)}}</td>
+          <td>{{showNewDate(bun.lastPriceUpdate, bun.hoursToNextPrice)| date:'medium'}}</td>
         </tr>
         </tbody>
       </table>
